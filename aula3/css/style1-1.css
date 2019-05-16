@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.topo{
+    background-color: #000;
+    height: 50px;
+    color: #fff;
+}
+.conteudo_topo{
+   background: #333;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn_menu{
+    display: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu a{
+    padding: 0.9em 3em;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-transform: uppercase;
+}
+#menu_principal{
+    display: block;
+    z-index: 3;
+}
+.menu a:hover{
+    background-color: #353e46;
+}
+.conteudo_topo h1{
+    background-color: #4d18df;
+    padding: 0.8em 1.5em;
+    margin-top:  2em;
+    margin-left: 1em;
+    box-shadow: 1px 1px 3px #000,
+                -1px -1px 5px #000;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+}
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 0.5em 2em;
+}
+.conteudo_planos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+.planos h2{
+    text-align: center;
+    padding: 1em;
+}
+.box{
+    width: 21%;
+    box-shadow: 0px 0px 5px #333;
+}
+
+@media(max-width: 1275px){
+
+    .menu a{
+        padding: 0.9em 2em;
+    }
+    .menu_principal{
+        display: block;
+    }
+}
+@media(max-width: 1100px){
+    .menu a{
+        padding: 0.9em 1em;
+    }
+    #menu_principal{
+        display: block;
+    }
+}
+@media(max-width: 768px){
+    .conteudo_topo h1{
+        background-color: #4d18df;
+        padding: 0.4em 0.3em;
+        margin-top:  0em;
+        margin-left: 0em;
+        box-shadow: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 25px;
+    }
+    .content{
+        width: 95%;
+    }
+    .menu{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0px;
+    }
+    #menu_principapl{
+        display: none;
+    }
+    .menu ul{
+        flex-direction: column;
+        background-color: #000; 
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+    }
+    #btn_menu{
+        display: block;
+        padding:0.8;
+        background-color: #fff;
+        color: #000;
+        margin-right: 1em;
+    }
+    .box{
+        width: 45%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 480px){
+    .box{
+        width: 100%;
+    }
+}

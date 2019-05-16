@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(238, 232, 232);
+}
+main {
+    display: flex;
+    
+}
+
+#banner {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+form{
+    background-color: #fff;
+    text-align: center;
+    margin-left: 12em;
+    margin-top: 10%;
+}
+.face {
+    background-color: blue;
+    color: #fff;
+}
+
+#conecta {
+    color: blue;
+}

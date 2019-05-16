@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1-1.css">
+</head>
+
+<body>
+    <header class="topo container">
+        <div class="conteudo_topo content">
+            <h1>Sua Marca</h1>
+            <nav class="menu" id="menu_principal">
+                <ul>
+                    <li><a href="index1-1.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produto</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <span id="btn_menu" onclick="botao_menu()">M</span>
+        </div><!-- Fim conteudo top -->
+    </header>
+    <section class="banner container">
+        <h2>Promoção de Carnaval</h2>
+        <picture>
+            <source media="(max-width: 768px)" srcset="imagens/3.jpeg">
+            <source media="(max-width: 1275px)" srcset="imagens/2.jpg">
+            <img src="imagens/1.jpg" alt="Macchu picchu">
+        </picture>
+    </section>
+
+    <section class="planos container">
+    <h2>Planos</h2>
+    <div class="conteudo_planos content">
+        <article class="box">
+            <img src="imagens/3.jpeg" alt="Foto da Cidade">
+            <h3>Titulo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et consectetur, nulla adipisci tempora
+                cumque sint consequuntur pariatur nemo hic iusto architecto, eveniet aut maiores. Repudiandae,
+                accusantium. Quos, modi nulla.</p>
+            </article>
+            <article class="box">
+                <img src="imagens/3.jpeg" alt="Foto da Cidade">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et consectetur, nulla adipisci tempora
+                    cumque sint consequuntur pariatur nemo hic iusto architecto, eveniet aut maiores. Repudiandae,
+                    accusantium. Quos, modi nulla.</p>
+                </article>
+                <article class="box">
+                    <img src="imagens/3.jpeg" alt="Foto da Cidade">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et consectetur, nulla adipisci tempora
+                        cumque sint consequuntur pariatur nemo hic iusto architecto, eveniet aut maiores. Repudiandae,
+                        accusantium. Quos, modi nulla.</p>
+                    </article>
+                    <article class="box">
+                        <img src="imagens/3.jpeg" alt="Foto da Cidade">
+                        <h3>Titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et consectetur, nulla adipisci tempora
+                            cumque sint consequuntur pariatur nemo hic iusto architecto, eveniet aut maiores. Repudiandae,
+                            accusantium. Quos, modi nulla.</p>
+                        </article>
+        </section>
+    </div>
+    <script>
+        function botao_menu() {
+            var m = document.getElementById("menu_principal");
+            if (m.style.display == "none") {
+                m.style.display = "block";
+            } else {
+                m.style.display = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>

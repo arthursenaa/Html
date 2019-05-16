@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML e CSS</title>
+    <style>
+        /* div{
+            width: 500px;
+            height: 200px;
+            background: red;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #topo {
+            width: 80%;
+            height: 400px;
+            background: blueviolet;
+            margin: 0 auto;
+        }
+
+        #topo p {
+            color: rgb(255, 0, 0);
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #conteudo {
+            width: 80%;
+            height: 600px;
+            background: #ccc;
+            margin: 0 auto;
+        }
+
+        .titulo {
+            font-size: 30px;
+            color: yellow;
+            /* Alterando a cor da fonte */
+            text-align: center;
+            /* alinhamento d texto */
+        }
+        .box_pai {
+            width: 90%;
+            height: 500px;
+            background:lightgreen;   
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+        }
+        .box {
+            width: 300px;
+            height: 400px;
+            background: #000;
+            color: #fff;
+            padding: 2em;
+            border:solid 1px #ff0000;
+            /* flex-grow: 1; */
+        }
+        .order1{
+            order:1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order:3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo">
+        <!--Início topo-->
+        <h1 class="titulo">Utilizando CSS</h1>
+        <p>Vamos aprender css!</p>
+    </div><!-- fim topo -->
+    <div id="conteudo">
+        <!-- Início Conteúdo -->
+        <h2 class="titulo">Promoções</h2>
+
+        <div class="box_pai">
+
+            <div class="box order2">
+                <h3>Titulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consectetur saepe ipsum repellendus
+                    ipsam accusantium eos nobis nulla dolores asperiores fuga aspernatur, explicabo expedita vitae,
+                    quasi
+                    pariatur quibusdam reprehenderit hic!
+                </p>
+            </div>
+            <!-- Fim box 1 -->
+            <div class="box order3">
+                <h3>Titulo 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consectetur saepe ipsum repellendus
+                    ipsam accusantium eos nobis nulla dolores asperiores fuga aspernatur, explicabo expedita vitae,
+                    quasi
+                    pariatur quibusdam reprehenderit hic!
+                </p>
+            </div>
+            <!-- Fim box 2 -->
+            <div class="box order1">
+                <h3>Titulo 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consectetur saepe ipsum repellendus
+                    ipsam accusantium eos nobis nulla dolores asperiores fuga aspernatur, explicabo expedita vitae,
+                    quasi
+                    pariatur quibusdam reprehenderit hic!
+                </p>
+            </div>
+            <!-- Fim box 3 -->
+        </div>
+    </div>
+    <!--Fim Conteúdo-->
+</body>
+
+</html>
