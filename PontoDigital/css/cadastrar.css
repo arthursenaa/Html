@@ -32,6 +32,11 @@ nav li{
 .big{
     background: #005eb8;
     margin: 0% 10% 0% 10%;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 20em;
 }
 
 .big h1{

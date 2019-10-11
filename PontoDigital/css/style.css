@@ -7,30 +7,29 @@
 #banner{
     background-color: #005eb8;
 }
-
-#menu{
-    width: 1.5em;
-    height: 1.25em;
-    text-align: center;
-    background-color: #a1a1a1;
-    margin-left: 3%;
-    /* z-index: 3; */
-    transition: linear 2s;
-
-}
-
 .menu{
-    border: #ffffff;
+    /* border: #ffffff;
     border-style: solid;
-    border-width: thick;
-    width: 6em; 
+    border-width: thick; */
+    width: 100%; 
     background-color: #2c2cc5;
-    display: none;
+    margin-top: -1.2em;
 }
-
-
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.menu ul h1{
+    margin-left: -3em;
+    margin-top: -5%;
+    color: #ffffff;
+}
+.menu ul a{
+    margin-top: 5%;
+}
 .botao_menu{
-    display: block;
+    display: none;
     padding: 0.8em;
     margin-right: 1em;
     color: #fff;
@@ -43,14 +42,13 @@
     font-weight: bolder;
 }
 
-
 .active{
     display: block;
 }
 
-.bann nav ul{
+/* .bann nav ul{
     flex-direction: column;
-}
+} */
 
 .bann nav a{
     color: #ffffff;
@@ -67,18 +65,17 @@ header > div >img{
     width: 19em;
     height: 24em;
     margin-top: 1em;
-    margin-left: 15%;
+    margin-left: 13%;
 }
 
 .login{
     background-color: #f3a720;
     margin-left: 65%;
     width: 30%;
-    height: 17em;
+    height: 16em;
     text-align: center;
-    margin-top: -27em;
-    border:1em solid #005eb8;
-     
+    margin-top: -26em;
+    border:0.5em solid #005eb8;
 }
 
 .login h2{
@@ -86,7 +83,7 @@ header > div >img{
 }
 .login input{
     background-color: #005eb8;
-    width: 70%;
+    width: 80%;
     text-align: center;
     height: 2em;
 }
@@ -101,10 +98,8 @@ header > div >img{
 }
 
 .produto{
-    display: flex;    
-    
+    display: flex;       
 }
-
 .produto img{
     width: 95%;
     height: 110%;
@@ -295,9 +290,23 @@ footer a{
     .texto h2{
         text-align: center;
     }
+    .menu ul h1{
+        margin-left: 1em;
+    }
+    .login{
+        margin-left: 48%;
+        width: 50%;
+    }
+    header > div >img{
+        margin-left: 6%;
+    }
 }
 
 @media(max-width:720px){
+    
+    .botao_menu{
+        display: block;
+    }
     #planosss .content{
         width: 100%;
         flex-wrap: wrap;
@@ -311,15 +320,27 @@ footer a{
     .content .plano4{
         width: 98%;
     }
-
-}
-
-@media(max-width:520px){
-    .login{
-        margin-left: 67%;
-        width: 35%;
+    header > div >img{
+        margin-left: 6%;
     }
-
+    .login{
+        width: 45%;
+        margin-left: 53%;
+    }
+    #menu{
+        width: 1.5em;
+        height: 1.25em;
+        text-align: center;
+        background-color: #a1a1a1;
+        margin-left: 3%;
+        /* z-index: 3; */
+        transition: linear 2s;
+    }
+    .menu {
+        display: none;
+    }
+}
+@media(max-width:520px){
     .divisao{
         margin-top: -7%;
     }
@@ -331,5 +352,15 @@ footer a{
 
     .plano{
         width: 85%;
+    }
+    header > div >img{
+        margin-left: -1.5em;
+        width: 16em;
+        height: 20em;
+    }
+    .login{
+        width: 55%;
+        margin-left: 45%;
+        margin-top: -24em;
     }
 }
